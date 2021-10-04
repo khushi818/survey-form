@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Language survey</title>
+    <link rel="stylesheet" href="survey.css">
+</head> 
+
+<body>
+    <div class = "ball1"></div>
+    <div class ="ball2"></div>
+    <section  id = "box">
+       <header id = "title">
+           <h1>Popular Language survey<h1>
+       <p id = "description">
+       “Knowledge is power.” – Francis Bacon<br>
+       Learn about others opinion.
+        </p>
+        </header> 
+        <div id = "main"> 
+        <form id = "survey-form">
+            <div class = "elements">
+            <label id = "name-label" for ="name">
+                Name:
+               </label>
+                  <input type = "text" id="name" name ="name"  
+                       class ="all-input-control" placeholder="Enter your name" required/>
+            </div>
+            <div class = "elements">
+              <label id ="email-label" for ="email">
+                  Email
+                  </label>
+                      <input type = "email" id="email" name = "email"
+                       class = "all-input-control" placeholder ="Enter your email" required/>
+            </div>
+            <div class = "elements">
+                <label id ="number-label" for ="number">
+                    Age
+                    <span class = "extra-info">(optional)</span>
+                    </label>
+                        <input type = "number" id="number" name = "age" min = "5" max = "99"
+                         class = "all-input-control" placeholder ="Enter your age" required/>
+            </div>
+            <div class = "elements">
+                <p>What s your profession?</p>
+                <select id = "dropdown" name = "profession" class = "all-input-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="programmer">Software Developer</option>
+                    <option value="learner">Self-Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select> 
+            </div>
+            <div class = "elements">
+                <p>Do you like coding?</p>
+                <label>
+                    <input name="opinion" value="Yes" type="radio" class="input-radio" checked/>
+                    Yes
+                    </label>
+                  <label>
+                    <input name="opinion" value="NO" type="radio"  class="input-radio"/>
+                    No
+                    </label>
+            </div>
+            <div class ="elements">
+                <p>
+                    Which language do you like?
+                  </p>
+            
+                  <label><input name="prefer" value="python" type="checkbox" class="input-checkbox"/>
+                    Python
+                </label>
+                <label><input name="prefer" value="Java" type="checkbox" class="input-checkbox"/>
+                    Java
+                </label>
+                <label><input name="prefer" value="C++" type="checkbox" class="input-checkbox"/>
+                    C++
+                </label>
+                <label><input name="prefer" value="C" type="checkbox" class="input-checkbox"/>
+                    C
+                </label>
+                <label><input name="prefer" value="GO" type="checkbox" class="input-checkbox"/>
+                    Go
+                </label>
+                <label><input name="prefer" value="other" type="checkbox" class="input-checkbox"/>
+                    other
+                </label>
+           </div>  
+           <div class ="elements">
+                <p>why do you like this language?</p>
+                <textarea id="why" class="input-textarea" name="why?" 
+                placeholder="Write here!....."></textarea>
+           </div> 
+           <div class = "elements">
+               <button type = "Submit" name ="submit" class = "submit-button"> 
+                   Submit
+               </button>
+           </div>     
+        </form>
+        </div>
+  </section>
+</body>
